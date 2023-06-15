@@ -1,5 +1,5 @@
 const calculateTemp = () => {
-    const inputTemp = document.getElementById('temp').value;
+    const input = document.getElementById('temp').value;
 
     const tempSelected = document.getElementById('temp_diff');
     const valueTemp = temp_diff.options[tempSelected.selectedIndex].value;
@@ -17,9 +17,9 @@ const calculateTemp = () => {
     }
 
     if (valueTemp == 'cel') {
-        document.getElementById("result").innerHTML = celToFah(inputTemp) + "&#176; Fahrenheit";
+        document.getElementById("result").innerHTML = celToFah(input) + "&#176; Fahrenheit";
     }
     else {
-        document.getElementById("result").innerHTML = fahToCel(inputTemp) + "&#176; Celsius";
+        document.getElementById("result").innerHTML = fahToCel(input) + "&#176; Celsius";
     }
 }
